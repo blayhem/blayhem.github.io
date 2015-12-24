@@ -6,18 +6,63 @@
     <description>Recent content on dfr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Dec 2015 00:19:39 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 24 Dec 2015 13:23:05 +0100</lastBuildDate>
     <atom:link href="http://blayhem.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Press Start</title>
+      <link>http://blayhem.github.io/post/Press%20Start/</link>
+      <pubDate>Thu, 24 Dec 2015 13:23:05 +0100</pubDate>
+      
+      <guid>http://blayhem.github.io/post/Press%20Start/</guid>
+      <description>
+
+&lt;h1 id=&#34;or-how-i-launched-this-project:4738e0b5d6343a3c29493bd4fcee8073&#34;&gt;Or how I launched this project 🚀&lt;/h1&gt;
+
+&lt;p&gt;There are several reasons why I started this blog, but the main one is to push my knowledge about web development further, and to work with different technologies I am not very familiar with (&lt;em&gt;yet&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;I started to build my personal website in &lt;strong&gt;Github Pages&lt;/strong&gt; earlier this year. As a personal, non-commercial site, I thought it was the best alternative for hosting. I built it from scratch, with &lt;strong&gt;HTML, CSS and a few JS lines&lt;/strong&gt; as I learned web development and UI/UX basics at university this year.&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo:4738e0b5d6343a3c29493bd4fcee8073&#34;&gt;Hugo.&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; is, quote, &amp;ldquo;a website framework developed in &lt;strong&gt;Go&lt;/strong&gt; language by [insert spwtv]&amp;ldquo;. It allows you to create a blog with posts written in &lt;strong&gt;markdown&lt;/strong&gt;, with several given themes you can customize.&lt;/p&gt;
+
+&lt;p&gt;First of all, I love markdown. And I was learning how to use &lt;strong&gt;VIM&lt;/strong&gt; as a power user, so I considered this the perfect opportunity to create content and learn at the same time.&lt;/p&gt;
+
+&lt;h2 id=&#34;creation-process:4738e0b5d6343a3c29493bd4fcee8073&#34;&gt;Creation process.&lt;/h2&gt;
+
+&lt;p&gt;All the posts are created using &lt;strong&gt;VIM&lt;/strong&gt; in &lt;strong&gt;iTerm 2&lt;/strong&gt;. Then, &lt;strong&gt;Hugo&lt;/strong&gt; uses &lt;em&gt;blackfriday&lt;/em&gt; [INSERT BLACKFRIDAY] for converting MD posts into HTML, and build the entire website.
+Then, the content is pushed using &lt;strong&gt;Github&lt;/strong&gt; (or &lt;strong&gt;git&lt;/strong&gt;) into my Github Pages repo.&lt;/p&gt;
+
+&lt;h2 id=&#34;making-it-easier:4738e0b5d6343a3c29493bd4fcee8073&#34;&gt;Making it easier.&lt;/h2&gt;
+
+&lt;p&gt;I consider Hugo an interesting framework, although the tutorial in their website [INSERT LINK] is not very intuitive. That is why next post will explain all the process to work with Hugo and Github to build a personal blog from scratch.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://blayhem.github.io/about/</link>
+      <pubDate>Thu, 24 Dec 2015 11:24:27 +0100</pubDate>
+      
+      <guid>http://blayhem.github.io/about/</guid>
+      <description>&lt;p&gt;This is an experiment to work with Hugo -the website framework-, together with VIM editing, Github Pages and HTML/CSS design.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hello World</title>
       <link>http://blayhem.github.io/post/Hello%20World/</link>
-      <pubDate>Thu, 24 Dec 2015 00:19:39 +0100</pubDate>
+      <pubDate>Thu, 24 Dec 2015 11:23:07 +0100</pubDate>
       
       <guid>http://blayhem.github.io/post/Hello%20World/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Hello, friend&amp;rdquo;
-#First attempt of blogging.
-###Yay!&lt;/p&gt;
+      <description>
+
+&lt;p&gt;&amp;ldquo;Hello, friend&amp;rdquo;&lt;/p&gt;
+
+&lt;h1 id=&#34;first-attempt-of-blogging:fd81d86acd9cb7b045b15aacc0f7b73d&#34;&gt;First attempt of blogging.&lt;/h1&gt;
+
+&lt;h3 id=&#34;yay:fd81d86acd9cb7b045b15aacc0f7b73d&#34;&gt;Yay!&lt;/h3&gt;
 </description>
     </item>
     
