@@ -25,18 +25,25 @@
 
 &lt;h2 id=&#34;hugo:4738e0b5d6343a3c29493bd4fcee8073&#34;&gt;Hugo.&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; is, quote, &amp;ldquo;a website framework developed in &lt;strong&gt;Go&lt;/strong&gt; language by [insert spwtv]&amp;ldquo;. It allows you to create a blog with posts written in &lt;strong&gt;markdown&lt;/strong&gt;, with several given themes you can customize.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; is, quote,&lt;/p&gt;
 
-&lt;p&gt;First of all, I love markdown. And I was learning how to use &lt;strong&gt;VIM&lt;/strong&gt; as a power user, so I considered this the perfect opportunity to create content and learn at the same time.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;a general-purpose website framework, (&amp;hellip;) a static site generator.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is developed in &lt;strong&gt;Go&lt;/strong&gt; language by &lt;a href=&#34;https://github.com/spf13&#34;&gt;Steve Francia&lt;/a&gt;.
+It allows you to create a blog with posts written in &lt;strong&gt;markdown&lt;/strong&gt;, with several given &lt;a href=&#34;https://github.com/spf13/hugoThemes&#34;&gt;themes&lt;/a&gt; you can customize.&lt;/p&gt;
+
+&lt;p&gt;First of all, I love markdown. And I was learning &lt;a href=&#34;https://www.eduonix.com/courses/Software-Development/Learn-VI-and-VIM-the-Free-Text-Editor&#34;&gt;how to use &lt;strong&gt;VIM&lt;/strong&gt; as a power user&lt;/a&gt;, so I considered this the perfect opportunity to create content and learn at the same time.&lt;/p&gt;
 
 &lt;h2 id=&#34;creation-process:4738e0b5d6343a3c29493bd4fcee8073&#34;&gt;Creation process.&lt;/h2&gt;
 
-&lt;p&gt;All the posts are created using &lt;strong&gt;VIM&lt;/strong&gt; in &lt;strong&gt;iTerm 2&lt;/strong&gt;. Then, &lt;strong&gt;Hugo&lt;/strong&gt; uses &lt;em&gt;blackfriday&lt;/em&gt; [INSERT BLACKFRIDAY] for converting MD posts into HTML, and build the entire website.
+&lt;p&gt;All the posts are created using &lt;strong&gt;VIM&lt;/strong&gt; in &lt;strong&gt;iTerm 2&lt;/strong&gt;. Then, &lt;strong&gt;Hugo&lt;/strong&gt; uses &lt;a href=&#34;https://github.com/russross/blackfriday&#34;&gt;&lt;em&gt;blackfriday&lt;/em&gt;&lt;/a&gt; for converting MD posts into HTML, and build the entire website.
 Then, the content is pushed using &lt;strong&gt;Github&lt;/strong&gt; (or &lt;strong&gt;git&lt;/strong&gt;) into my Github Pages repo.&lt;/p&gt;
 
 &lt;h2 id=&#34;making-it-easier:4738e0b5d6343a3c29493bd4fcee8073&#34;&gt;Making it easier.&lt;/h2&gt;
 
-&lt;p&gt;I consider Hugo an interesting framework, although the tutorial in their website [INSERT LINK] is not very intuitive. That is why next post will explain all the process to work with Hugo and Github to build a personal blog from scratch.&lt;/p&gt;
+&lt;p&gt;I consider Hugo an very interesting framework. The &lt;a href=&#34;https://gohugo.io/overview/introduction&#34;&gt;tutorial&lt;/a&gt; in their website is very exhaustive, although I considerd it a little bit too complex. That is why in the next post will explain all the steps needed to work with Hugo and Github to build a personal blog from scratch.&lt;/p&gt;
 </description>
     </item>
     
