@@ -1,0 +1,219 @@
+    <!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Daniel Fernandez">
+		<meta name="description" content="Hugo testing">
+		<meta name="generator" content="Hugo 0.15" />
+		<title>Under Construction &middot; dfr</title>
+		<link rel="shortcut icon" href="http://blayhem.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="http://blayhem.github.io/css/style.css">
+		<link rel="stylesheet" href="http://blayhem.github.io/css/highlight.css">
+		<link rel="stylesheet" href="http://blayhem.github.io/css/monosocialiconsfont.css">
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://blayhem.github.io/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='http://blayhem.github.io/about'>About</a>
+	
+
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>Under Construction</h1>
+                    <h2 class="headline">December 25, 2015</h2>
+                </header>
+                <section id="post-body">
+                    
+
+<h1 id="building-this-blog-from-scratch:6356f7edacd34ba686cabe7dd6c20c77">Building this blog from scratch.</h1>
+
+<p>First of all I am assuming you are reading this from an O.S. with a good terminal <del>not the Microsoft shitty attempt</del>, that is, OS X or Linux.</p>
+
+<p>Although I used my mac for the creation of this site, I am sure that most of the tools can be used from Linux. There is also a version of Hugo <a href="https://github.com/spf13/hugo/releases">for Windows</a>.
+Now, the very first thing I did was to use <a href="http://brew.sh">Homebrew</a> in <a href="https://www.iterm2.com">iTerm</a>, as</p>
+
+<pre><code>brew install hugo
+</code></pre>
+
+<p>Then, we need to order Hugo to <strong>create a site for us</strong>, by typing</p>
+
+<pre><code class="language-bash">$ hugo new site PATH-TO-SITE
+</code></pre>
+
+<p>Because I wanted all my work on Github, I did &lsquo;hugo new ~/Github/HugoSite&rsquo;. There, if we &lsquo;cd&rsquo; the directory we can find several folders and files.</p>
+
+<pre><code>dfr-MBP 🍕:HugoSite$ ls
+archetypes	content		layouts		static
+config.toml	data		public		themes
+</code></pre>
+
+<h3 id="creation-time:6356f7edacd34ba686cabe7dd6c20c77">Creation time!</h3>
+
+<p>If you want an <strong>&lsquo;about&rsquo;</strong> page for your blog, you have to write the command that you will be using <strong>for creating every single post</strong>:</p>
+
+<pre><code>$ hugo new about.md
+</code></pre>
+
+<p>Now you can use VIM, <del>emacs,</del> gedit, atom, or whatever text editor to edit your about page, with some information about the website, abour yourself&hellip;</p>
+
+<p>The metadata of the file is between the &lsquo;+++&rsquo; signs. Below that, you can start writing anything in markdown, then hugo will craft a beautiful <em>about</em> page from it.</p>
+
+<p>Next step is <strong>chosing a theme for your site</strong>. You have to clone the themes repository and chose one for your blog. Do</p>
+
+<pre><code>$ git clone --depth 1 --recursive https://github.com/spf13/hugoThemes.git themes
+</code></pre>
+
+<p>Now, for rendering your site you have to write</p>
+
+<pre><code class="language-bash">$ hugo server --theme=themename -D
+</code></pre>
+
+<p>Where -D stands for <em>&rsquo;&ndash;buildDrafts&rsquo;</em>, or <strong>preview your blog entries as if they were already posted</strong>. If you have &lsquo;draft = true&rsquo; in your post, it will not be published unless you add that flag. To undraft it, however, you only have to write</p>
+
+<pre><code>$ hugo undraft content/post/POST-TITLE.md
+</code></pre>
+
+<p>Now, every time you update your posts, you can have <strong>hugo server</strong> running, and the site will automatically load the changes on <em>localhost</em>.</p>
+
+<h3 id="final-touches-and-publishing:6356f7edacd34ba686cabe7dd6c20c77">Final touches and publishing.</h3>
+
+<p>Once you have decided your theme, you have to edit the file <strong>config.toml</strong> in the root directory of your website.
+This file has special parameters and metadata, which are crucial for the building process.
+Each theme has a set of particular parameters, I recommend to read your theme&rsquo;s README to see which requirements does it have.
+For example, this is part of the requirements needed for my theme, <em>&lsquo;cactus&rsquo;</em>:</p>
+
+<pre><code># Site settings
+baseurl = &quot;http://replace-this-with-your-domain.com/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;Hugo Cactus Theme&quot;
+theme = &quot;hugo-cactus-theme&quot;
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = &quot;&quot;
+# Disable comments by leaving disqusShortname empty
+disqusShortname = &quot;spf13&quot;
+
+[params]
+	name = &quot;Mr. Hugo&quot;
+	description = &quot;Describe your website&quot;
+	bio = &quot;Blogger - Programmer - Gopher&quot;
+	# Enter optionally your twitter account
+	twitter = &quot;Your Twitter account&quot;'
+	enableRSS = true
+</code></pre>
+
+<p>It is important to notice that, if we specify a theme in the <strong>config.toml</strong> file, we do not need to write the &lsquo;&ndash;theme=asdf&rsquo; flag when typing &lsquo;$ hugo server&rsquo;. In fact, after specifying a theme and undrafting all the posts, we only need to write <strong>&rsquo;$ hugo server&rsquo;</strong> to preview our site, and</p>
+
+<pre><code>$ hugo
+</code></pre>
+
+<p>to publish it in the /public directory!</p>
+
+<p>The last thing you have to do now is to <strong>put all the files</strong> inside that folder <strong>into your hosting platform</strong>.
+In my case, as I already had a <a href="http://hubpress.io">Hubpress</a> project running, I only substituted the files in my Github/Hubpress repo with the Hugo ones.</p>
+
+<h4 id="et-voilà:6356f7edacd34ba686cabe7dd6c20c77">Et voilà!</h4>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                <a href="https://twitter.com/blayhem">
+                        <img class="avatar" src="http://blayhem.github.io/images/avatar.png">
+                        <div>
+                            <span class="dark">Daniel Fernandez</span>
+                            <span></span>
+                        </div>
+                    </a>
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fblayhem.github.io%2fpost%2fUnder%2520Construction%2f - Under%20Construction by @blayhem"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="http://blayhem.github.io/post/Under%20Construction/">Under Construction<aside class="dates">Dec 25</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://blayhem.github.io/post/Press%20Start/">Press Start<aside class="dates">Dec 24</aside></a>
+        </li>
+        
+   
+    
+        
+   
+    
+        
+        <li>
+            <a href="http://blayhem.github.io/post/Hello%20World/">Hello World<aside class="dates">Dec 24</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        
+<div id="social">
+    
+    <a class="symbol" href="https://www.facebook.com/">
+        circlefacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/blayhem">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/blayhem">
+        circletwitterbird
+    </a>
+    
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2015 Daniel Fernandez
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://blayhem.github.io/js/main.js"></script>
+<script src="http://blayhem.github.io/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+    </body>
+</html>

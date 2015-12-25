@@ -6,8 +6,106 @@
     <description>Recent content on dfr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Dec 2015 13:23:05 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 25 Dec 2015 17:24:01 +0100</lastBuildDate>
     <atom:link href="http://blayhem.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Under Construction</title>
+      <link>http://blayhem.github.io/post/Under%20Construction/</link>
+      <pubDate>Fri, 25 Dec 2015 17:24:01 +0100</pubDate>
+      
+      <guid>http://blayhem.github.io/post/Under%20Construction/</guid>
+      <description>
+
+&lt;h1 id=&#34;building-this-blog-from-scratch:6356f7edacd34ba686cabe7dd6c20c77&#34;&gt;Building this blog from scratch.&lt;/h1&gt;
+
+&lt;p&gt;First of all I am assuming you are reading this from an O.S. with a good terminal &lt;del&gt;not the Microsoft shitty attempt&lt;/del&gt;, that is, OS X or Linux.&lt;/p&gt;
+
+&lt;p&gt;Although I used my mac for the creation of this site, I am sure that most of the tools can be used from Linux. There is also a version of Hugo &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;for Windows&lt;/a&gt;.
+Now, the very first thing I did was to use &lt;a href=&#34;http://brew.sh&#34;&gt;Homebrew&lt;/a&gt; in &lt;a href=&#34;https://www.iterm2.com&#34;&gt;iTerm&lt;/a&gt;, as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;brew install hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, we need to order Hugo to &lt;strong&gt;create a site for us&lt;/strong&gt;, by typing&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo new site PATH-TO-SITE
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because I wanted all my work on Github, I did &amp;lsquo;hugo new ~/Github/HugoSite&amp;rsquo;. There, if we &amp;lsquo;cd&amp;rsquo; the directory we can find several folders and files.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;dfr-MBP 🍕:HugoSite$ ls
+archetypes	content		layouts		static
+config.toml	data		public		themes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;creation-time:6356f7edacd34ba686cabe7dd6c20c77&#34;&gt;Creation time!&lt;/h3&gt;
+
+&lt;p&gt;If you want an &lt;strong&gt;&amp;lsquo;about&amp;rsquo;&lt;/strong&gt; page for your blog, you have to write the command that you will be using &lt;strong&gt;for creating every single post&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new about.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can use VIM, &lt;del&gt;emacs,&lt;/del&gt; gedit, atom, or whatever text editor to edit your about page, with some information about the website, abour yourself&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;The metadata of the file is between the &amp;lsquo;+++&amp;rsquo; signs. Below that, you can start writing anything in markdown, then hugo will craft a beautiful &lt;em&gt;about&lt;/em&gt; page from it.&lt;/p&gt;
+
+&lt;p&gt;Next step is &lt;strong&gt;chosing a theme for your site&lt;/strong&gt;. You have to clone the themes repository and chose one for your blog. Do&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git clone --depth 1 --recursive https://github.com/spf13/hugoThemes.git themes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, for rendering your site you have to write&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo server --theme=themename -D
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where -D stands for &lt;em&gt;&amp;rsquo;&amp;ndash;buildDrafts&amp;rsquo;&lt;/em&gt;, or &lt;strong&gt;preview your blog entries as if they were already posted&lt;/strong&gt;. If you have &amp;lsquo;draft = true&amp;rsquo; in your post, it will not be published unless you add that flag. To undraft it, however, you only have to write&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo undraft content/post/POST-TITLE.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, every time you update your posts, you can have &lt;strong&gt;hugo server&lt;/strong&gt; running, and the site will automatically load the changes on &lt;em&gt;localhost&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;final-touches-and-publishing:6356f7edacd34ba686cabe7dd6c20c77&#34;&gt;Final touches and publishing.&lt;/h3&gt;
+
+&lt;p&gt;Once you have decided your theme, you have to edit the file &lt;strong&gt;config.toml&lt;/strong&gt; in the root directory of your website.
+This file has special parameters and metadata, which are crucial for the building process.
+Each theme has a set of particular parameters, I recommend to read your theme&amp;rsquo;s README to see which requirements does it have.
+For example, this is part of the requirements needed for my theme, &lt;em&gt;&amp;lsquo;cactus&amp;rsquo;&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Site settings
+baseurl = &amp;quot;http://replace-this-with-your-domain.com/&amp;quot;
+languageCode = &amp;quot;en-us&amp;quot;
+title = &amp;quot;Hugo Cactus Theme&amp;quot;
+theme = &amp;quot;hugo-cactus-theme&amp;quot;
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = &amp;quot;&amp;quot;
+# Disable comments by leaving disqusShortname empty
+disqusShortname = &amp;quot;spf13&amp;quot;
+
+[params]
+	name = &amp;quot;Mr. Hugo&amp;quot;
+	description = &amp;quot;Describe your website&amp;quot;
+	bio = &amp;quot;Blogger - Programmer - Gopher&amp;quot;
+	# Enter optionally your twitter account
+	twitter = &amp;quot;Your Twitter account&amp;quot;&#39;
+	enableRSS = true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is important to notice that, if we specify a theme in the &lt;strong&gt;config.toml&lt;/strong&gt; file, we do not need to write the &amp;lsquo;&amp;ndash;theme=asdf&amp;rsquo; flag when typing &amp;lsquo;$ hugo server&amp;rsquo;. In fact, after specifying a theme and undrafting all the posts, we only need to write &lt;strong&gt;&amp;rsquo;$ hugo server&amp;rsquo;&lt;/strong&gt; to preview our site, and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to publish it in the /public directory!&lt;/p&gt;
+
+&lt;p&gt;The last thing you have to do now is to &lt;strong&gt;put all the files&lt;/strong&gt; inside that folder &lt;strong&gt;into your hosting platform&lt;/strong&gt;.
+In my case, as I already had a &lt;a href=&#34;http://hubpress.io&#34;&gt;Hubpress&lt;/a&gt; project running, I only substituted the files in my Github/Hubpress repo with the Hugo ones.&lt;/p&gt;
+
+&lt;h4 id=&#34;et-voilà:6356f7edacd34ba686cabe7dd6c20c77&#34;&gt;Et voilà!&lt;/h4&gt;
+</description>
+    </item>
     
     <item>
       <title>Press Start</title>
