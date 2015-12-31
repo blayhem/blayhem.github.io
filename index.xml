@@ -6,8 +6,71 @@
     <description>Recent content on dfr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Dec 2015 17:24:01 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 31 Dec 2015 17:43:56 +0100</lastBuildDate>
     <atom:link href="http://blayhem.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Visualizing Data with Pynet</title>
+      <link>http://blayhem.github.io/post/Visualizing%20Data%20with%20Pynet/</link>
+      <pubDate>Thu, 31 Dec 2015 17:43:56 +0100</pubDate>
+      
+      <guid>http://blayhem.github.io/post/Visualizing%20Data%20with%20Pynet/</guid>
+      <description>
+
+&lt;h1 id=&#34;my-first-work-visualizing-twitter-data-with-python-and-gephi:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;My first work visualizing Twitter data with Python and Gephi&lt;/h1&gt;
+
+&lt;p&gt;About a week ago I read &lt;a href=&#34;https://www.reddit.com/r/dataisbeautiful/comments/3y5t1t/i_visualized_my_instagram_connections_oc/&#34;&gt;this&lt;/a&gt; reddit post, where user &lt;a href=&#34;https://github.com/trevorprater&#34;&gt;Trevor Prater&lt;/a&gt; did this curious job about data visualization with his Instagram network:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/t6JShXt.png&#34; alt=&#34;Instagram connections&#34; title=&#34;Trevor Prater Instagram Connections&#34; /&gt;
+(&lt;a href=&#34;https://github.com/trevorprater/wholikes&#34;&gt;This&lt;/a&gt; is the repository with the code).&lt;/p&gt;
+
+&lt;p&gt;As Trevor said in the post comments:
+&amp;gt; Using the Instagram API and the networx library (Python), I constructed a graph of the connections between my followers, their followers, the people they follow, the people I follow, the people that follow the people I follow, and the people that are followed by the people I follow. I then exported the networx graph as a GraphML file and loaded it into Gephi.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Semantic_satiation&#34;&gt;Yo dawg&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-project:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;My project&lt;/h3&gt;
+
+&lt;p&gt;To plot a graph with my twitter connections, represented by my followers and their common followers with me. That is, all the people which is not also connected with me but also between them (mutually).&lt;/p&gt;
+
+&lt;p&gt;Python was a requirement if I wanted to follow Prater&amp;rsquo;s steps, but I also wanted to learn Python anyway, and this was the perfect opportunity.&lt;/p&gt;
+
+&lt;h3 id=&#34;starting-i-have-no-idea-of-what-i-m-doing:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Starting: I have no idea of what I&amp;rsquo;m doing&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Note: this was the first time I wrote anything in Python. As all the work I&amp;rsquo;m doing recently, the main objective with this was to get out of my comfort zone and learn something new. I love Python now, but I can&amp;rsquo;t say the same for the Twitter REST API.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I worked all the time with &lt;a href=&#34;http://jetbrains.com/pycharm&#34;&gt;Pycharm&lt;/a&gt;, the Jetbrains IDE for Python. The first logical step was to document myself about &lt;a href=&#34;https://networkx.github.io&#34;&gt;Networkx&lt;/a&gt; and the &lt;a href=&#34;https://dev.twitter.com/rest/public&#34;&gt;Twitter REST APIs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There was a huge problem regarding the API: the &lt;strong&gt;rate limiting&lt;/strong&gt;. My script needed to perform a query of all my followers&amp;rsquo; followers, and the API only allows 15 queries of &lt;em&gt;GET followers/ids&lt;/em&gt; for every 15 minutes.&lt;/p&gt;
+
+&lt;p&gt;My &lt;del&gt;ñapa&lt;/del&gt; solution: do a 1min delay before every query, so that after 15 queries (15min) the rate limit does not affect. &lt;strong&gt;That is, a little more than 4h for my twitter account, with only 245 followers when I wrote this lines&lt;/strong&gt;. Yumm.&lt;/p&gt;
+
+&lt;p&gt;I also created a Twitter application (netpy) at &lt;a href=&#34;https://apps.twitter.com&#34;&gt;Twitter Apps&lt;/a&gt; to get the tokens for the queries, and a &lt;a href=&#34;https://twitter.com/pynet_&#34;&gt;second twitter account&lt;/a&gt; with less followers, for testing purposes.&lt;/p&gt;
+
+&lt;p&gt;After 4 hours running the script and creating the graph with Networkx, I exported all the data in a gexf file, to be opened with Gephi.
+There, I colored the nodes by degree and rearranged them.&lt;/p&gt;
+
+&lt;h2 id=&#34;final-result:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Final result&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/blayhem/Pynet/master/curved.png&#34; alt=&#34;Round graph_final result&#34; title=&#34;Trevor Prater Instagram Connections&#34; /&gt;
+(Round edges)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/blayhem/Pynet/master/wo%20labels.png&#34; alt=&#34;Straight graph_final result&#34; title=&#34;Trevor Prater Instagram Connections&#34; /&gt;
+(Straight edges)&lt;/p&gt;
+
+&lt;p&gt;There are three main &amp;ldquo;clouds&amp;rdquo; of connected nodes, representing my friends in Zaragoza (left), my UC3M friends (upper right), and a few followers from Ciudad Real (lower right).&lt;/p&gt;
+
+&lt;h4 id=&#34;other-links-i-found-useful:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Other links I found useful&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.linuxtopia.org/online_books/programming_books/python_programming/python_ch16s03.html&#34;&gt;Set operations in Python&lt;/a&gt; (thanks, &lt;a href=&#34;https://github.com/alexrs95&#34;&gt;Alex&lt;/a&gt;!).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://paulcrickard.wordpress.com/tag/gephi/&#34;&gt;John Keats Poems: graphing words w/ Networkx and Python&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.martingrandjean.ch/gephi-introduction/&#34;&gt;Gephi: introduction to Network Analysis and Visualization&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Also thanks to my friend &lt;a href=&#34;https://github.com/javierhonduco&#34;&gt;Javier Honduco&lt;/a&gt; for the Python and Twitter API tips.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Under Construction</title>
