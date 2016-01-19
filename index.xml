@@ -19,6 +19,8 @@
 
 &lt;h1 id=&#34;my-first-work-visualizing-twitter-data-with-python-and-gephi:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;My first work visualizing Twitter data with Python and Gephi&lt;/h1&gt;
 
+&lt;h4 id=&#34;edit-here-s-the-link-https-github-com-blayhem-pynet-to-my-work:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Edit: here&amp;rsquo;s the &lt;a href=&#34;https://github.com/blayhem/pynet&#34;&gt;link&lt;/a&gt; to my work.&lt;/h4&gt;
+
 &lt;p&gt;About a week ago I read &lt;a href=&#34;https://www.reddit.com/r/dataisbeautiful/comments/3y5t1t/i_visualized_my_instagram_connections_oc/&#34;&gt;this&lt;/a&gt; reddit post, where user &lt;a href=&#34;https://github.com/trevorprater&#34;&gt;Trevor Prater&lt;/a&gt; did this curious job about data visualization with his Instagram network:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://i.imgur.com/t6JShXt.png&#34; alt=&#34;Instagram connections&#34; title=&#34;Trevor Prater Instagram Connections&#34; /&gt;
@@ -52,13 +54,17 @@ There, I colored the nodes by degree and rearranged them.&lt;/p&gt;
 
 &lt;h2 id=&#34;final-result:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Final result&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/blayhem/Pynet/master/curved.png&#34; alt=&#34;Round graph_final result&#34; title=&#34;Trevor Prater Instagram Connections&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://blayhem.github.io/static/pynet/curved.png&#34; alt=&#34;Round graph_final result&#34; title=&#34;Round graph_final result&#34; /&gt;
 (Round edges)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/blayhem/Pynet/master/wo%20labels.png&#34; alt=&#34;Straight graph_final result&#34; title=&#34;Trevor Prater Instagram Connections&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://blayhem.github.io/static/pynet/wo labels.png&#34; alt=&#34;Straight graph_final result&#34; title=&#34;Straight graph_final result&#34; /&gt;
 (Straight edges)&lt;/p&gt;
 
-&lt;p&gt;There are three main &amp;ldquo;clouds&amp;rdquo; of connected nodes, representing my friends in Zaragoza (left), my UC3M friends (upper right), and a few followers from Ciudad Real (lower right).&lt;/p&gt;
+&lt;p&gt;There are three main &amp;ldquo;clouds&amp;rdquo; of connected nodes, representing my friends in Zaragoza (left), my UC3M friends (upper right), and a few from Ciudad Real (lower right).&lt;/p&gt;
+
+&lt;h4 id=&#34;edit2-i-ran-the-script-again-with-my-gf-s-twitter-account-720-followers-the-results-were-even-better:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Edit2: I ran the script again with my GF&amp;rsquo;s Twitter account (~720 followers). The results were even better:&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blayhem.github.io/static/pynet/gold.png&#34; alt=&#34;Straight graph_final result&#34; title=&#34;Straight graph_final result&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;other-links-i-found-useful:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Other links I found useful&lt;/h4&gt;
 
@@ -214,7 +220,10 @@ Then, the content is pushed using &lt;strong&gt;Github&lt;/strong&gt; (or &lt;st
       <pubDate>Thu, 24 Dec 2015 11:24:27 +0100</pubDate>
       
       <guid>http://blayhem.github.io/about/</guid>
-      <description>&lt;p&gt;This is an experiment to work with Hugo -the website framework-, together with VIM editing, Github Pages and HTML/CSS design.&lt;/p&gt;
+      <description>&lt;p&gt;My name is Daniel Fernandez Rico, and I&amp;rsquo;m a Computer Science student in Madrid. I enjoy both programming and design.
+You can find me in the links at the bottom of the page, or &lt;a href=&#34;mailto:deferrico@gmail.com&#34;&gt;send me an email&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This blog is an experiment to work with Hugo -the website framework-, together with VIM editing, Github Pages and HTML/CSS design.&lt;/p&gt;
 </description>
     </item>
     
