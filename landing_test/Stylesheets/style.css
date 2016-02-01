@@ -61,22 +61,24 @@ a:hover, .hover {
 }
 /* FOOTER */
  footer {
-    font-size:0.3em;
+    font-size:0.5em;
     opacity:0.95;
     color:white;
-    font-weight: 800;
-    position: absolute;
+    font-weight: 300;
+    position:absolute;
     bottom: 1.5em;
-    left: 7.5em;
-    right: 0;
+    left: 5em;
+    right: 5em;
+     align-content: center;
     text-align: center;
 }
 footer small, footer a {
+    width: 20%;
     float: left;
     padding: 1em 0 0;
     line-height: 1.1em;
-    margin: 10px 10px;
-    display: block;
+    margin: 10px 0px;
+    display: inline-block;
     opacity: 0.6;
     border-top: 1px solid #b9b9b9;
     -webkit-transition:opacity 700ms ease-in-out;
@@ -100,13 +102,13 @@ small:hover, footer a:hover {
  .email {
      display:none;
     font-size: 1em;
-    font-weight: 900;
-     
+    font-weight: 300;
      letter-spacing:-0.06em;
 }
 .arroba {
     font-size: 0.8em;
     margin-left: 3px;
+    margin-right: 3px;
     /*color:#ffc000;*/
 }
 /* TYPING */
@@ -115,7 +117,6 @@ small:hover, footer a:hover {
     color:#ffffff;
     font-size:1em;
     padding: 3px 0 5px 0;
-    
     display: inline;
     border-right: 1px solid #AAF0D1;
     -webkit-animation: 1200ms blink step-end infinite;
