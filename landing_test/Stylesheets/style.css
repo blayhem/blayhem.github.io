@@ -10,7 +10,7 @@ body {
     min-height: 200px;
     background: #0078A7;
     font-family: Quicksand, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 span {
     display: inline-block;
@@ -18,13 +18,13 @@ span {
 a {
     text-decoration:none;
     opacity:0.75;
-    color:white;    
+    color:white;
     -webkit-transition:color 1500ms ease-in-out;
     -moz-transition:color 1500ms ease-in-out;
     transition:color 1500ms ease-in-out;
 }
 a:hover, .hover {
-    color:#ffc000;
+    color:#AAF0D1;
     text-decoration: underline;
 }
 @-webkit-keyframes blink {
@@ -32,7 +32,7 @@ a:hover, .hover {
         border-color: transparent
     }
     50% {
-        border-color: #ffc000
+        border-color: #AAF0D1
     }
 }
 @-moz-keyframes blink {
@@ -40,7 +40,7 @@ a:hover, .hover {
         border-color: transparent
     }
     50% {
-        border-color: #ffc000
+        border-color: #AAF0D1
     }
 }
 /* WRAPPER */
@@ -63,13 +63,13 @@ a:hover, .hover {
  footer {
     font-size:0.3em;
     opacity:0.95;
-     color:white;
+    color:white;
     font-weight: 800;
     position: absolute;
     bottom: 1.5em;
-    left: 5em;
+    left: 7.5em;
     right: 0;
-    text-align: left;
+    text-align: center;
 }
 footer small, footer a {
     float: left;
@@ -88,8 +88,8 @@ footer small, footer a {
 }
 small:hover, footer a:hover {
     opacity: 1;
-    border-top: 1px solid #ffc000;
-    color: #ffc000;
+    border-top: 1px solid #AAF0D1;
+    color: #AAF0D1;
 }
 /*footer a:hover body { 
 	box-shadow: inset 0em 0em 0em 0.3em  #ffc000;
@@ -117,12 +117,12 @@ small:hover, footer a:hover {
     padding: 3px 0 5px 0;
     
     display: inline;
-    border-right: 1px solid #ffc000;
+    border-right: 1px solid #AAF0D1;
     -webkit-animation: 1200ms blink step-end infinite;
     -moz-animation: 1200ms blink step-end infinite;
 }
 .typing span:last-child {
-    color:#ffc000;
+    color:#ffffff;
     display: inline-block;
 }
 /*RESPONSIVE*/
