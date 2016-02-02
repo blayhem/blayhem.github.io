@@ -1,4 +1,5 @@
 jQuery(document).ready(function ($) {
+	$('#bigtext').bigtext();
 	var text = [
 		
 		"Hello, friend,",
