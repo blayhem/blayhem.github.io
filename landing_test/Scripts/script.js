@@ -3,8 +3,8 @@ jQuery(document).ready(function ($) {
 	var text = [
 		
 		"Hello, friend,",
-		"My name is Daniel Fernandez",
-		"I'm a junior developer and designer",
+		"My name is Daniel \n Fernandez",
+		"I'm a jr developer and designer",
 		"as well as a CS student.",
         "Welcome to my page!"
 
