@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
 		
 		"Hello, friend,",
 		"My name is Daniel Fernandez",
-		"I'm a junior developer & designer",
+		"I'm a junior developer and designer",
 		"as well as a CS student.",
         "Welcome to my page!"
 
