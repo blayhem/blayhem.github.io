@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on dfr</title>
-    <link>http://blayhem.github.io/post/</link>
+    <link>http://blayhem.github.io/blog/post/</link>
     <description>Recent content in Posts on dfr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 31 Dec 2015 17:43:56 +0100</lastBuildDate>
-    <atom:link href="http://blayhem.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="http://blayhem.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+
     <item>
       <title>Visualizing Data with Pynet</title>
-      <link>http://blayhem.github.io/post/Visualizing%20Data%20with%20Pynet/</link>
+      <link>http://blayhem.github.io/blog/post/Visualizing%20Data%20with%20Pynet/</link>
       <pubDate>Thu, 31 Dec 2015 17:43:56 +0100</pubDate>
-      
-      <guid>http://blayhem.github.io/post/Visualizing%20Data%20with%20Pynet/</guid>
+
+      <guid>http://blayhem.github.io/blog/post/Visualizing%20Data%20with%20Pynet/</guid>
       <description>
 
 &lt;h1 id=&#34;my-first-work-visualizing-twitter-data-with-python-and-gephi:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;My first work visualizing Twitter data with Python and Gephi&lt;/h1&gt;
@@ -54,17 +54,17 @@ There, I colored the nodes by degree and rearranged them.&lt;/p&gt;
 
 &lt;h2 id=&#34;final-result:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Final result&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blayhem.github.io/static/pynet/curved.png&#34; alt=&#34;Round graph_final result&#34; title=&#34;Round graph_final result&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://blayhem.github.io/blog/static/pynet/curved.png&#34; alt=&#34;Round graph_final result&#34; title=&#34;Round graph_final result&#34; /&gt;
 (Round edges)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blayhem.github.io/static/pynet/wo labels.png&#34; alt=&#34;Straight graph_final result&#34; title=&#34;Straight graph_final result&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://blayhem.github.io/blog/static/pynet/wo labels.png&#34; alt=&#34;Straight graph_final result&#34; title=&#34;Straight graph_final result&#34; /&gt;
 (Straight edges)&lt;/p&gt;
 
 &lt;p&gt;There are three main &amp;ldquo;clouds&amp;rdquo; of connected nodes, representing my friends in Zaragoza (left), my UC3M friends (upper right), and a few from Ciudad Real (lower right).&lt;/p&gt;
 
 &lt;h4 id=&#34;edit2-i-ran-the-script-again-with-my-gf-s-twitter-account-720-followers-the-results-were-even-better:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Edit2: I ran the script again with my GF&amp;rsquo;s Twitter account (~720 followers). The results were even better:&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blayhem.github.io/static/pynet/gold.png&#34; alt=&#34;Straight graph_final result&#34; title=&#34;Straight graph_final result&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://blayhem.github.io/blog/static/pynet/gold.png&#34; alt=&#34;Straight graph_final result&#34; title=&#34;Straight graph_final result&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;other-links-i-found-useful:56f75ca3e158b4ca621152d51dcb87f1&#34;&gt;Other links I found useful&lt;/h4&gt;
 
@@ -77,13 +77,13 @@ There, I colored the nodes by degree and rearranged them.&lt;/p&gt;
 &lt;p&gt;Also thanks to my friend &lt;a href=&#34;https://github.com/javierhonduco&#34;&gt;Javier Honduco&lt;/a&gt; for the Python and Twitter API tips.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Under Construction</title>
-      <link>http://blayhem.github.io/post/Under%20Construction/</link>
+      <link>http://blayhem.github.io/blog/post/Under%20Construction/</link>
       <pubDate>Fri, 25 Dec 2015 17:24:01 +0100</pubDate>
-      
-      <guid>http://blayhem.github.io/post/Under%20Construction/</guid>
+
+      <guid>http://blayhem.github.io/blog/post/Under%20Construction/</guid>
       <description>
 
 &lt;h1 id=&#34;building-this-blog-from-scratch:6356f7edacd34ba686cabe7dd6c20c77&#34;&gt;Building this blog from scratch.&lt;/h1&gt;
@@ -175,13 +175,13 @@ In my case, as I already had a &lt;a href=&#34;http://hubpress.io&#34;&gt;Hubpre
 &lt;h4 id=&#34;et-voilà:6356f7edacd34ba686cabe7dd6c20c77&#34;&gt;Et voilà!&lt;/h4&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Press Start</title>
-      <link>http://blayhem.github.io/post/Press%20Start/</link>
+      <link>http://blayhem.github.io/blog/post/Press%20Start/</link>
       <pubDate>Thu, 24 Dec 2015 13:23:05 +0100</pubDate>
-      
-      <guid>http://blayhem.github.io/post/Press%20Start/</guid>
+
+      <guid>http://blayhem.github.io/blog/post/Press%20Start/</guid>
       <description>
 
 &lt;h1 id=&#34;or-how-i-launched-this-project:4738e0b5d6343a3c29493bd4fcee8073&#34;&gt;Or how I launched this project 🚀&lt;/h1&gt;
@@ -213,13 +213,13 @@ Then, the content is pushed using &lt;strong&gt;Github&lt;/strong&gt; (or &lt;st
 &lt;p&gt;I consider Hugo an very interesting framework. The &lt;a href=&#34;https://gohugo.io/overview/introduction&#34;&gt;tutorial&lt;/a&gt; in their website is very exhaustive, although I considerd it a little bit too complex. That is why in the next post will explain all the steps needed to work with Hugo and Github to build a personal blog from scratch.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Hello World</title>
-      <link>http://blayhem.github.io/post/Hello%20World/</link>
+      <link>http://blayhem.github.io/blog/post/Hello%20World/</link>
       <pubDate>Thu, 24 Dec 2015 11:23:07 +0100</pubDate>
-      
-      <guid>http://blayhem.github.io/post/Hello%20World/</guid>
+
+      <guid>http://blayhem.github.io/blog/post/Hello%20World/</guid>
       <description>
 
 &lt;p&gt;&amp;ldquo;Hello, friend&amp;rdquo;&lt;/p&gt;
@@ -229,6 +229,6 @@ Then, the content is pushed using &lt;strong&gt;Github&lt;/strong&gt; (or &lt;st
 &lt;h3 id=&#34;yay:fd81d86acd9cb7b045b15aacc0f7b73d&#34;&gt;Yay!&lt;/h3&gt;
 </description>
     </item>
-    
+
   </channel>
 </rss>
