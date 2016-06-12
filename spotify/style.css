@@ -1,0 +1,12 @@
+body{
+  font-family:helvetica, courier, sans-serif; 
+  color: #C9C9C9; 
+  background-color: #404040; 
+  width: 100%;
+}
+
+#container {
+  margin: auto; 
+  width: 100%; 
+  text-align: center;
+}
