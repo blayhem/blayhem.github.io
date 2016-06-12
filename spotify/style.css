@@ -1,239 +1,459 @@
-#container {
-  margin: auto; 
-  width: 100%; 
-  text-align: center;
+@media only screen and (max-width: 1080px) {
+    #container {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    button {
+        border: 0;
+        outline: 0;
+        font-size: 22pt;
+        margin: 0.5em !important;
+        padding: 0.8em 1.25em !important;
+        width: 350px !important;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+    }
+    /* BUTTONS CSS */
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+    body {
+        font-family: Roboto, sans-serif;
+        background: #404040;
+        font-size: 24pt;
+        color: #C9C9C9;
+        font-weight: 200;
+        padding: 1.5em;
+        min-width: 350px;
+    }
+    .col {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .button {
+        position: relative;
+        margin: 0.5em;
+        font-weight: 100;
+        padding: 0.8em 1.25em;
+        text-align: center;
+        width: 200px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+        color: white;
+    }
+    .button.raised {
+        -moz-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+        background: #84bd00;
+        box-shadow: 0px 1px 1px #085a9b;
+    }
+    .button.raised:active {
+        background: #649a00;
+        box-shadow: 0px 1px 1px #063e6b;
+    }
+    span {
+        font-weight: 400;
+    }
+    .anim {
+        -moz-transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+    }
+    .anim:before {
+        position: relative;
+        content: '';
+        display: block;
+        margin-top: 100%;
+    }
+    .anim:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+    }
+    .hoverable:hover> .anim {
+        -moz-animation: anim-out 0.75s;
+        -webkit-animation: anim-out 0.75s;
+        animation: anim-out 0.75s;
+    }
+    .hoverable:hover> .anim:after {
+        -moz-animation: anim-out-pseudo 0.75s;
+        -webkit-animation: anim-out-pseudo 0.75s;
+        animation: anim-out-pseudo 0.75s;
+    }
+    @-webkit-keyframes anim-in {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-moz-keyframes anim-in {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-ms-keyframes anim-in {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @keyframes anim-in {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-webkit-keyframes anim-in-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-moz-keyframes anim-in-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-ms-keyframes anim-in-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @keyframes anim-in-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-webkit-keyframes anim-out {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-moz-keyframes anim-out {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-ms-keyframes anim-out {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @keyframes anim-out {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-webkit-keyframes anim-out-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-moz-keyframes anim-out-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-ms-keyframes anim-out-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @keyframes anim-out-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
 }
 
-a{
-  text-decoration: none;
-  color: white;
-}
-
-button { 
-  border: 0;
-  outline: 0;
-  font-size: 14pt;
-  margin: 0.5em !important;
-  padding: 0.8em 1.25em !important;
-  width: 200px !important;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-}
-
-/* BUTTONS CSS */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
-
-body {
-  font-family: Roboto, sans-serif;
-  background: #404040;
-  font-size: 14pt;
-  color: #C9C9C9;
-  font-weight: 200;
-  padding: 1.5em;
-  min-width: 60px;
-}
-
-.col {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.button {
-  position: relative;
-  margin: 0.5em;
-  font-weight: 100;
-  padding: 0.8em 1.25em;
-  text-align: center;
-  width: 200px;
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-  color: white;
-}
-
-.button.raised {
-  -moz-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-  background: #84bd00;
-  box-shadow: 0px 1px 1px #085a9b;
-}
-
-.button.raised:active {
-  background: #649a00;
-  box-shadow: 0px 1px 1px #063e6b;
-}
-
-span {
-  font-weight: 400;
-}
-
-.anim {
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-}
-.anim:before {
-  position: relative;
-  content: '';
-  display: block;
-  margin-top: 100%;
-}
-.anim:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50%;
-}
-
-.hoverable:hover > .anim {
-  -moz-animation: anim-out 0.75s;
-  -webkit-animation: anim-out 0.75s;
-  animation: anim-out 0.75s;
-}
-.hoverable:hover > .anim:after {
-  -moz-animation: anim-out-pseudo 0.75s;
-  -webkit-animation: anim-out-pseudo 0.75s;
-  animation: anim-out-pseudo 0.75s;
-}
-
-@-webkit-keyframes anim-in {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@-moz-keyframes anim-in {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@-ms-keyframes anim-in {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@keyframes anim-in {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@-webkit-keyframes anim-in-pseudo {
-  0% {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    background: transparent;
-  }
-}
-@-moz-keyframes anim-in-pseudo {
-  0% {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    background: transparent;
-  }
-}
-@-ms-keyframes anim-in-pseudo {
-  0% {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    background: transparent;
-  }
-}
-@keyframes anim-in-pseudo {
-  0% {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    background: transparent;
-  }
-}
-@-webkit-keyframes anim-out {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@-moz-keyframes anim-out {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@-ms-keyframes anim-out {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@keyframes anim-out {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@-webkit-keyframes anim-out-pseudo {
-  0% {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    background: transparent;
-  }
-}
-@-moz-keyframes anim-out-pseudo {
-  0% {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    background: transparent;
-  }
-}
-@-ms-keyframes anim-out-pseudo {
-  0% {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    background: transparent;
-  }
-}
-@keyframes anim-out-pseudo {
-  0% {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    background: transparent;
-  }
+@media only screen and (min-width: 1080px) {
+    #container {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    button {
+        border: 0;
+        outline: 0;
+        font-size: 14pt;
+        margin: 0.5em !important;
+        padding: 0.8em 1.25em !important;
+        width: 200px !important;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+    }
+    /* BUTTONS CSS */
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+    body {
+        font-family: Roboto, sans-serif;
+        background: #404040;
+        font-size: 14pt;
+        color: #C9C9C9;
+        font-weight: 200;
+        padding: 1.5em;
+        min-width: 350px;
+    }
+    .col {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .button {
+        position: relative;
+        margin: 0.5em;
+        font-weight: 100;
+        padding: 0.8em 1.25em;
+        text-align: center;
+        width: 200px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+        color: white;
+    }
+    .button.raised {
+        -moz-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+        background: #84bd00;
+        box-shadow: 0px 1px 1px #085a9b;
+    }
+    .button.raised:active {
+        background: #649a00;
+        box-shadow: 0px 1px 1px #063e6b;
+    }
+    span {
+        font-weight: 400;
+    }
+    .anim {
+        -moz-transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+    }
+    .anim:before {
+        position: relative;
+        content: '';
+        display: block;
+        margin-top: 100%;
+    }
+    .anim:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+    }
+    .hoverable:hover> .anim {
+        -moz-animation: anim-out 0.75s;
+        -webkit-animation: anim-out 0.75s;
+        animation: anim-out 0.75s;
+    }
+    .hoverable:hover> .anim:after {
+        -moz-animation: anim-out-pseudo 0.75s;
+        -webkit-animation: anim-out-pseudo 0.75s;
+        animation: anim-out-pseudo 0.75s;
+    }
+    @-webkit-keyframes anim-in {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-moz-keyframes anim-in {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-ms-keyframes anim-in {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @keyframes anim-in {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-webkit-keyframes anim-in-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-moz-keyframes anim-in-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-ms-keyframes anim-in-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @keyframes anim-in-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-webkit-keyframes anim-out {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-moz-keyframes anim-out {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-ms-keyframes anim-out {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @keyframes anim-out {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-webkit-keyframes anim-out-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-moz-keyframes anim-out-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @-ms-keyframes anim-out-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
+    @keyframes anim-out-pseudo {
+        0% {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+            background: transparent;
+        }
+    }
 }
