@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -9,35 +10,39 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <style>
-        p{font-size: 2em; color: #fff}
-        body{background-color: #151515;min-height: 700px;}
-        button{min-width: 180px;}
+          p {font-size: 2em;color: #fff}
+          body {background-color: #151515;}
+          button {min-width: 180px;}
       </style>
   </head>
 
-  <body class="valign-wrapper">
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+  <body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
-          <div class="valign container center-align">
+    <div class="valign-wrapper" style="position: absolute; width: 100%; height: 100%;">
+      <div class="valign center-align" style="width: 100%;">
+        <div class="container">
+          
+          <p>Subscribe to Spotify Family Plan with me.</p>
+          <button class="waves-effect waves-light btn-large green accent-3" type="submit" form="form" value="Submit">
+              <form id="form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="KQBAPQ6VUD9R4">
+              </form>
+              <div class="anim"></div><span>Subscribe</span>
+          </button>
 
-              <p>Subscribe to Spotify Family Plan with me.</p>
-              <button class="waves-effect waves-light btn-large green accent-3" type="submit" form="form" value="Submit">
-                  <form id="form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                      <input type="hidden" name="cmd" value="_s-xclick">
-                      <input type="hidden" name="hosted_button_id" value="KQBAPQ6VUD9R4">
-                  </form>
-                  <div class="anim"></div><span>Subscribe</span>
-              </button>
-
-
-              <p>Or cancel subscription if you are already in.</p>
-              <button class="waves-effect waves-light btn-large green accent-3">
-                  <a class="white-text text-darken-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_subscr-find&alias=8HJ74YGXDHTQW">Unsubscribe</a>
-              </button>
-
-          </div>
-
+          <p>Or cancel subscription if you are already in.</p>
+          <button class="waves-effect waves-light btn-large green accent-3">
+              <a class="white-text text-darken-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_subscr-find&alias=8HJ74YGXDHTQW">Unsubscribe</a>
+          </button>
+          
+        </div>
+      </div>
+    </div>
+    
   </body>
+
 </html>
