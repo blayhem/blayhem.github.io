@@ -3,8 +3,8 @@ jQuery(document).ready(function ($) {
 	var text = [
 		
 		"Hello, friend,",
-		"This is my old website",
-		"You can find me now at"
+		"This is my old website.",
+		"You can find me now at:"
 	];
 
     var htmlElement = document.getElementById("text");   
