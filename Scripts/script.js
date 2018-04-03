@@ -3,11 +3,8 @@ jQuery(document).ready(function ($) {
 	var text = [
 		
 		"Hello, friend,",
-		"My name is Daniel Fernandez",
-		"I'm a jr developer and designer",
-		"as well as a CS student.",
-        "Welcome to my page!"
-
+		"This is my old website",
+		"You can find me now at"
 	];
 
     var htmlElement = document.getElementById("text");   
